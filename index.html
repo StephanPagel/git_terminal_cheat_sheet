@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIT & TERMINAL CHEATSHEET</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to my <span>GIT-</span> and <span>TERMINAL</span> Cheat Sheet</h1>
+    </header>
+    <main>
+        <section>
+            <h3>WAS IST <span>GIT</span>?!</h3>
+            <p>
+                Git ist ein Versionverwaltungstool, das bei jedem comitten eine Art Schnappschuss
+                von deinem Projekt macht. Hinterher hat man einen Stapel von Schnappschüssen.
+            </p>
+            <h3>GITHUB vs <span>GIT</span></h3>
+            <p>
+                Git und Github sind nicht das gleiche! Git ist ein VSC-Tool und GitHub ist eine Plattform, die Git
+                benutzt. Es gibt auch andere zb. GitLab, GitBucket, BitBucket, Sourceforge etc. </p>
+            <h3>WOZU BRAUCHEN WIR <span>GIT</span>?</h3>
+            <p>
+                Git wird überall benutzt und ist eins der wichtigsten Tools für Entwickler geworden. Dadurch können
+                Entwickler von überall zusammenarbeiten.
+            </p>
+        </section>
+        <section>
+            <h2>WICHTIGE BEGRIFFE ZU <span>GIT</span></h2>
+            <p>Lokal = Working Directory → Änderungen werden als Modified dargestellt
+            </p>
+            <p>
+                Staged Area = Index → Daten werden für den commit vorgemerkt sind aber noch nicht hochgeladen
+            </p>
+            <p>
+                .git directory repository → Daten sind von lokal auf git geklont worden und stehen als snapshot
+                bereit
+            </p>
+            <p>Branching/Merge <a href="https://miro.com/app/board/uXjVO9rmPHw=/"></a>
+            </p>
+        </section>
+
+        <section>
+            <h1>Terminalbefehle</h1>
+            <p>
+                <span>git init</span>
+                initialisiert ein lokales git repository
+            </p>
+
+            <p>
+                <span>git add .</span>
+                gibt an was alles in den commit rein soll ( . gibt an das alles in den commit sol)
+            </p>
+
+            <p>
+                <span>git commit -m "text"</span> hinterlegt einen message/commit ( man kann auch sagen erlegt eine
+                version an)
+            </p>
+
+            <p>
+                <span>git push</span> schickt das lokale repository in das github repository
+            </p>
+
+            <p>
+                <span>git log</span>
+                zeigt alle bis dato erstellten commits ausführlich an
+            </p>
+
+            <p>
+                <span>git log --oneline</span> zeigt alle die bis dato erstellten commits in kurzform an
+            </p>
+            <p>
+                <span>git branch "name"</span> erstellt einen neuen Branch
+            </p>
+            <p>
+                <span>git branch -a</span> zeigt alle erstellten Branches an
+            </p>
+            <p>
+                <span>git branch -d "name"</span> löscht den ausgewählten Branch
+            </p>
+            <p>
+                <span>git checkout</span> wechselt zwischen den Branches
+            </p>
+            <p>
+                <span>git pull</span> lädt die aktuelle Version des Repository von GitHub runter
+            </p>
+            <p>
+                <span>git clone</span> lädt die aktuelle Version des Repository von GitHub runter
+            </p>
+            <p>
+                <span>git merge</span> ist dafür da, um zwei Branches zusammenzuführen
+            </p>
+        </section>
+        <section>
+            <h1><span>GIT</span> & <span>VSC</span></h1>
+            <span>A | ADDED</span>
+            <p>
+                Ein neues file wurde zum repository hinzugefügt
+            </p>
+            <span>M | MODIFIED</span>
+            <p>
+                Ein bestehendes file wurde geändert
+            </p>
+            <span>D | DELETE</span>
+            <p>Ein file wurde gelöscht</p>
+            <span>U | UNTRACKED</span>
+            <p>
+                Das file ist neu oder wurde verändert -wurde jedoch noch nicht zum Repository hinzugefügt
+            </p>
+            <span>C | CONFLICT</span>
+            <p>
+                Es gibt einen Konflikt in dem file
+            </p>
+            <span>R | RENAMED</span>
+            <p>
+                Das file wurde umbenannt
+            </p>
+            <span>S | SUBMODUL</span>
+            <p>
+                Im repository existiert ein Subrepository = untergeordnetes Repository
+            </p>
+        </section>
+        <h1>Shellbefehle</h1>
+        <section>
+            <div>
+                <p>touch:</p>
+                <p>mkdir 'make directory':</p>
+                <p>ls 'list directory':</p>
+                <p>ls -l 'list directory':</p>
+                <p>ls -a 'list directory':</p>
+                <p>cd 'change directory':</p>
+                <p>cat 'concatenate':</p>
+                <p>mv 'move/rename':</p>
+                <p>
+                    cp 'copy files and directories':
+                </p>
+                <p>
+                    pwd 'print working directory':
+                </p>
+            </div>
+
+            <div>
+                <p>Erstellt eine Datei</p>
+                <p>Erstellt einen neuen Ordner</p>
+                <p>
+                    Zeigt uns alle Dateien/Ordner im Verzeichnis an
+                </p>
+                <p>
+                    Zeigt uns alle Dateien/Ordner im Verzeichnis an, nur ausführlicher
+                </p>
+                <p>
+                    Zeigt uns alle Dateien/Ordner, auch die verstecken.
+                </p>
+                <p>
+                    Mit cd können in unserem Verzeichnis navigieren
+                </p>
+                <p>
+                    Kann ich mir den Inhalt von Datein im Terminal anzeigen lassen.
+                </p>
+                <p>
+                    Verschiebt Datein und kann sie umbenennen
+                </p>
+                <p>
+                    Erstellt eine Kopie von unserer Datei oder Ordner
+                </p>
+                <p>
+                    Zeigt uns vom root verzeichnis aus wo wir uns gerade befinden.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
